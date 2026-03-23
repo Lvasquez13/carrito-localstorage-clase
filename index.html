@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>🛒 Tienda - Login</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+  <div id="login-view">
+    <h2>Bienvenido a la tienda</h2>
+    <p>Ingresa tu correo para continuar:</p>
+    <input type="email" id="correo" placeholder="correo@ejemplo.com">
+    <button onclick="login()">Ingresar</button>
+  </div>
+
+  <div id="tienda-view" style="display:none;">
+    <h1>🛒 Tienda</h1>
+    <p id="usuario"></p>
+
+    <div id="productos" class="productos-container"></div>
+
+    <h2>Carrito</h2>
+    <div id="carrito"></div>
+    <h3 id="total"></h3>
+    <button onclick="vaciarCarrito()">Vaciar carrito</button>
+    <button onclick="logout()">Cerrar sesión</button>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
